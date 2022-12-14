@@ -14,6 +14,8 @@
         <li>Edit the database connection information in <b> database_config.php</b>  file ,Provide servername, username ,password ,database</li>
        <li><i>If</i> files and folders are copied in htdocs folder then run the url like <b>http://localhost/</b> OR<br/> if files and folders are copied in any other folder within htdocs folder then use url :<b>http://localhost/folder-name</b></li>
     </ul>
+    <h4>Demo Link:</h4>
+    <p><a href="http://bucklit.42web.io/">http://bucklit.42web.io/</a></p>
      <h4>Test Login Details :</h4>
      <p>  <b>UserId :</b> Admin <br/>
        <b>Password :</b> Admin1234 

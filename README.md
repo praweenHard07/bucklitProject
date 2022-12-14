@@ -15,8 +15,8 @@
        <li><i>If</i> files and folders are copied in htdocs folder then run the url like <b>http://localhost/</b> OR<br/> if files and folders are copied in any other folder within htdocs folder then use url :<b>http://localhost/folder-name</b></li>
     </ul>
      <h4>Test Login Details :</h4>
-       <b>UserId :</b> Admin <br/>
-       <b>Password :</b> Admin1234 <br/>
-
+     <p>  <b>UserId :</b> Admin <br/>
+       <b>Password :</b> Admin1234 
+       </p>
     <h4><b>For Any Query :</b>Write me</h4>
      <p>Email : praween.dev@gmail.com</p>

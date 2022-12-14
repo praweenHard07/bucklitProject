@@ -1,5 +1,4 @@
 <?php
-
  //database config ,required information: servername ,username ,password ,database
    require_once("database_config.php");
   //calling the user login Controller ..
@@ -13,10 +12,6 @@
              {
             $userInfo['userId']=$_POST['userId'];
               $userInfo['password']=$_POST['password'];
-      //----------- passing dummy data info ...
-            //  $userInfo['userId']="PRAWEEN";
-            //  $userInfo['password']="1234";
-                 
               $userStatusArr=$userObj->loginRequest($userInfo);
               //return User Information ...
               $statusArr=$userStatusArr;
@@ -34,27 +29,5 @@
        }
      
        print_r(json_encode($statusArr));
-   exit;
 
-
-  if(isset($_POST['userId'])&&isset($_POST['password'])){
-   //--------- query for inserting the data 
-   $sql="INSERT INTO bucklit_users (uid,user_name,upassword,en_date)VALUES('".$_POST['userId']."','".$_POST['userId']."','".$_POST['password']."','2022-12-13')";
-       if($conn->query($sql))
-         {
-            $statusArr['status']="ok";
-            $statusArr['message']="Data Insert !!!";
-          }else{
-            $statusArr['status']="error";
-            $statusArr['message']=$conn->error;
-         }
-
-       
-      
-    }else{
-      $statusArr['status']="error";
-      $statusArr['message']="Invalid Information";
-    }
-//-------- return the status ------  
-  print_r(json_encode($statusArr))
 ?>
